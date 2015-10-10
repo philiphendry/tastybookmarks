@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ListItemText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        
+    </style>
+    
+    <style name="ListItemTags">
+    	<item name="android:textSize">10sp</item>
+    </style>
+	    
+</resources>

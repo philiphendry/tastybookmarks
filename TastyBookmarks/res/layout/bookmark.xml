@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/titleLabel" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Title">
+	</TextView>
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/titleText">
+	</EditText>
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/urlLabel" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Url">
+	</TextView>
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/urlText">
+	</EditText>
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/tagsLabel" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Tags">
+	</TextView>
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/tagsText">
+		<requestFocus></requestFocus>
+	</EditText>
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/descriptionLabel" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Description">
+	</TextView>
+	<EditText 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/descriptionText"
+		android:inputType="textMultiLine">
+	</EditText>
+		
+	<RelativeLayout 
+		android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" 
+		android:layout_height="match_parent">
+		<TableLayout android:stretchColumns="*" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_alignParentBottom="true">
+			<TableRow>
+				<Button android:text="Save" android:id="@+id/saveButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+				<Button android:text="Cancel" android:id="@+id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+	
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="uk.philiphendry.tastybookmarks"
+      android:versionCode="1"
+      android:versionName="0.1">
+      
+    <application 
+    		android:name="MyApp"
+    		android:icon="@drawable/icon" 
+    		android:label="@string/app_name"
+    		android:theme="@android:style/Theme.Light">
+    
+        <activity android:name=".Main" android:label="@string/app_name" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".Login_" android:label="@string/app_name_login" android:noHistory="true"></activity>
+		<activity android:name=".ViewTags_" android:label="@string/app_name_viewtags"></activity>		
+		<activity android:name=".BookmarkList_" android:label="@string/app_name_bookmarklist"></activity>
+		<activity android:name=".EditBookmark_" android:label="@string/app_name_viewbookmark"></activity>
+
+    </application>
+
+	<uses-permission android:name="android.permission.INTERNET" />
+
+</manifest> 
